@@ -15,8 +15,8 @@ public class Main {
         ATM ATM = context.getBean("bank",ATM.class);
         DataSource dataSource = context.getBean("filename",DataSource.class);
         Bank bank = context.getBean("dataSource" ,Bank.class);
-
-
+        ATMSimulator atmSimulator =context.getBean("atm",ATMSimulator.class);
+        atmSimulator.run();
 
 
     }
