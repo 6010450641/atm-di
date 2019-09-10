@@ -7,7 +7,7 @@ public class JdbcSQLiteConnection {
         try {
 // setup
             Class.forName("org.sqlite.JDBC");
-            String dbURL = "jdbc:sqlite:bookstore.db";
+            String dbURL = "jdbc:sqlite:dbatm.db";
             Connection conn = DriverManager.getConnection(dbURL);
             if (conn != null) {
                 System.out.println("Connected to the database....");
@@ -17,7 +17,7 @@ public class JdbcSQLiteConnection {
                 System.out.println("Product name: " + dm.getDatabaseProductName());
 // execute SQL statements
                 System.out.println("----- Data in Book table -----");
-                String query = "Select * from book";
+                String query = "Select * from account";
                 Statement statement = conn.createStatement();
                 ResultSet resultSet = statement.executeQuery(query);
                 while (resultSet.next()) {
