@@ -11,10 +11,10 @@ public class DataSource {
     private String filename;
 
     /**
-     * @param filename the name of the customer file
+     //* @param filename the name of the customer file
      */
-    public DataSource(String filename) {
-        this.filename = filename;
+    public DataSource() {
+        this.filename = "customers.txt";
     }
 
     /**

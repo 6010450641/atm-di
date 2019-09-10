@@ -11,7 +11,7 @@ public class Main {
         // ATMSimulator atmSimulator = new ATMSimulator(atm);
 //        atmSimulator.run();
         ApplicationContext context =
-                new ClassPathXmlApplicationContext("config.xml");
+                new ClassPathXmlApplicationContext("src/main/resource/config.xml");
         ATM ATM = context.getBean("bank",ATM.class);
         DataSource dataSource = context.getBean("filename",DataSource.class);
         Bank bank = context.getBean("dataSource" ,Bank.class);
