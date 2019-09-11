@@ -23,9 +23,9 @@ public class JdbcSQLiteConnection {
                 while (resultSet.next()) {
                     int id = resultSet.getInt(1);
                     String name = resultSet.getString(2);
-                    double price = resultSet.getDouble(3);
+                    double bank = resultSet.getDouble(3);
 
-                    System.out.println("id:"+id+" name:"+name+" price: "+price);
+                    System.out.println("id:"+id+" name:"+name+" bank: "+bank);
                 }
 // close connection
                 conn.close();
